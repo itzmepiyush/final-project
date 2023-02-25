@@ -4,7 +4,7 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page288/di
 WORKDIR /var/www/html
 RUN unzip digitalex.zip
 RUN rm -rf digitalex.zip 
-RUN cp -rf html/*. 
+RUN cp -rf html/* . 
 RUN rm -rf html
 EXPOSE 80
 CMD httpd -DEFOREGROUND
