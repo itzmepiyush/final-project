@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centOS:latest
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/centOS-*
 RUN sed -i 's|#baseurl=http://#mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/centOS-*
 RUN yum install zip httpd unzip -y
