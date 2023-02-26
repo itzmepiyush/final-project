@@ -7,4 +7,4 @@ RUN rm -rf digitalex.zip
 RUN cp -rf digitalex-html/* .
 RUN rm -rf digitalex-html
 EXPOSE 80
-CMD httpd -DEFOREGROUND
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
