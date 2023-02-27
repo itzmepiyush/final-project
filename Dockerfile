@@ -8,3 +8,4 @@ RUN cp -rf digitalex-html/* .
 RUN rm -rf digitalex-html
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+ hello 
