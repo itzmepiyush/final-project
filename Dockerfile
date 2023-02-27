@@ -7,4 +7,4 @@ RUN rm -rf fiu.zip
 RUN cp -rf html/* .
 RUN rm -rf html
 EXPOSE 80
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"
